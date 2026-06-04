@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h1>🎵 MusicPlay</h1>
+            </div>
+            <nav class="nav">
+                <a href="#" class="nav-link active">
+                    <span>🏠</span> Home
+                </a>
+                <a href="#" class="nav-link">
+                    <span>🔍</span> Search
+                </a>
+                <a href="#" class="nav-link">
+                    <span>📚</span> Your Library
+                </a>
+            </nav>
+            <div class="playlists">
+                <a href="#" class="nav-link">
+                    <span>➕</span> Create Playlist
+                </a>
+                <a href="#" class="nav-link">
+                    <span>❤️</span> Liked Songs
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <div class="header-nav">
+                    <button class="nav-btn">◀</button>
+                    <button class="nav-btn">▶</button>
+                </div>
+                <div class="user-profile">
+                    <button class="profile-btn">👤 Profile</button>
+                </div>
+            </header>
+
+            <section class="content">
+                <h2>Good Evening</h2>
+                <div class="playlist-grid">
+                    <div class="playlist-card" onclick="playSong('Chill Vibes')">
+                        <div class="playlist-image">🎧</div>
+                        <h3>Chill Vibes</h3>
+                        <p>Relaxing music for work</p>
+                    </div>
+                    <div class="playlist-card" onclick="playSong('Workout Mix')">
+                        <div class="playlist-image">💪</div>
+                        <h3>Workout Mix</h3>
+                        <p>High energy tracks</p>
+                    </div>
+                    <div class="playlist-card" onclick="playSong('Focus Flow')">
+                        <div class="playlist-image">🎯</div>
+                        <h3>Focus Flow</h3>
+                        <p>Deep concentration</p>
+                    </div>
+                    <div class="playlist-card" onclick="playSong('Party Hits')">
+                        <div class="playlist-image">🎉</div>
+                        <h3>Party Hits</h3>
+                        <p>Feel the beat</p>
+                    </div>
+                </div>
+
+                <h2>Recently Played</h2>
+                <div class="playlist-grid">
+                    <div class="playlist-card" onclick="playSong('Jazz Classics')">
+                        <div class="playlist-image">🎷</div>
+                        <h3>Jazz Classics</h3>
+                        <p>Smooth jazz tunes</p>
+                    </div>
+                    <div class="playlist-card" onclick="playSong('Rock Legends')">
+                        <div class="playlist-image">🎸</div>
+                        <h3>Rock Legends</h3>
+                        <p>Classic rock anthems</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Player Bar -->
+    <footer class="player-bar">
+        <div class="player-left">
+            <div class="now-playing-img">🎵</div>
+            <div class="now-playing-info">
+                <div class="song-title" id="songTitle">Select a song</div>
+                <div class="artist-name">Artist Name</div>
+            </div>
+            <button class="like-btn">♡</button>
+        </div>
+
+        <div class="player-center">
+            <div class="player-controls">
+                <button class="control-btn">🔀</button>
+                <button class="control-btn">⏮</button>
+                <button class="control-btn play-btn" onclick="togglePlay()">▶️</button>
+                <button class="control-btn">⏭</button>
+                <button class="control-btn">🔁</button>
+            </div>
+            <div class="progress-bar">
+                <span class="time">0:00</span>
+                <div class="progress-container">
+                    <div class="progress" id="progress"></div>
+                </div>
+                <span class="time">3:45</span>
+            </div>
+        </div>
+
+        <div class="player-right">
+            <button class="control-btn">🎤</button>
+            <button class="control-btn">📋</button>
+            <button class="control-btn" onclick="toggleVolume()">🔊</button>
+            <div class="volume-bar">
+                <div class="volume-fill"></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
