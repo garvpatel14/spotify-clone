@@ -1,46 +1,216 @@
-// Music Library - Using free demo audio files
+// Music Library - Organized by playlists
 const musicLibrary = [
+    // Liked Songs / Daily Mix 1
     {
         title: "Blinding Lights",
         artist: "The Weeknd",
         duration: 200,
-        // Using a demo audio URL - you can replace with your own
+        playlist: "Liked Songs",
         audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
     },
     {
-        title: "Shape of You",
-        artist: "Ed Sheeran",
-        duration: 233,
+        title: "Save Your Tears",
+        artist: "The Weeknd",
+        duration: 215,
+        playlist: "Liked Songs",
         audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"
-    },
-    {
-        title: "Levitating",
-        artist: "Dua Lipa",
-        duration: 203,
-        audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"
     },
     {
         title: "Starboy",
         artist: "The Weeknd ft. Daft Punk",
         duration: 230,
+        playlist: "Liked Songs",
+        audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"
+    },
+    
+    // Discover Weekly / Daily Mix 2
+    {
+        title: "Shape of You",
+        artist: "Ed Sheeran",
+        duration: 233,
+        playlist: "Discover Weekly",
         audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3"
     },
     {
-        title: "Sunflower",
-        artist: "Post Malone, Swae Lee",
-        duration: 158,
+        title: "Perfect",
+        artist: "Ed Sheeran",
+        duration: 263,
+        playlist: "Discover Weekly",
         audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3"
+    },
+    {
+        title: "Thinking Out Loud",
+        artist: "Ed Sheeran",
+        duration: 281,
+        playlist: "Discover Weekly",
+        audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3"
+    },
+    
+    // Release Radar
+    {
+        title: "Levitating",
+        artist: "Dua Lipa",
+        duration: 203,
+        playlist: "Release Radar",
+        audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3"
     },
     {
         title: "Don't Start Now",
         artist: "Dua Lipa",
         duration: 183,
+        playlist: "Release Radar",
+        audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3"
+    },
+    {
+        title: "Physical",
+        artist: "Dua Lipa",
+        duration: 194,
+        playlist: "Release Radar",
+        audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3"
+    },
+    
+    // Daily Mix 1 / Summer Hits
+    {
+        title: "Sunflower",
+        artist: "Post Malone, Swae Lee",
+        duration: 158,
+        playlist: "Daily Mix 1",
+        audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3"
+    },
+    {
+        title: "Circles",
+        artist: "Post Malone",
+        duration: 215,
+        playlist: "Daily Mix 1",
+        audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-11.mp3"
+    },
+    {
+        title: "Better Now",
+        artist: "Post Malone",
+        duration: 231,
+        playlist: "Daily Mix 1",
+        audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-12.mp3"
+    },
+    
+    // On Repeat / Summer Hits
+    {
+        title: "As It Was",
+        artist: "Harry Styles",
+        duration: 167,
+        playlist: "On Repeat",
+        audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-13.mp3"
+    },
+    {
+        title: "Watermelon Sugar",
+        artist: "Harry Styles",
+        duration: 174,
+        playlist: "On Repeat",
+        audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-14.mp3"
+    },
+    {
+        title: "Golden",
+        artist: "Harry Styles",
+        duration: 206,
+        playlist: "On Repeat",
+        audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-15.mp3"
+    },
+    
+    // Chill Lounge / Peaceful Piano
+    {
+        title: "Someone Like You",
+        artist: "Adele",
+        duration: 285,
+        playlist: "Chill Lounge",
+        audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-16.mp3"
+    },
+    {
+        title: "Hello",
+        artist: "Adele",
+        duration: 295,
+        playlist: "Chill Lounge",
+        audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+    },
+    {
+        title: "Easy On Me",
+        artist: "Adele",
+        duration: 224,
+        playlist: "Chill Lounge",
+        audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"
+    },
+    
+    // Deep Focus / Instrumental Study
+    {
+        title: "Roses",
+        artist: "SAINt JHN",
+        duration: 186,
+        playlist: "Deep Focus",
+        audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"
+    },
+    {
+        title: "Blinding Lights (Remix)",
+        artist: "The Weeknd",
+        duration: 200,
+        playlist: "Deep Focus",
+        audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3"
+    },
+    {
+        title: "Memories",
+        artist: "Maroon 5",
+        duration: 189,
+        playlist: "Deep Focus",
+        audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3"
+    },
+    
+    // Jazz Vibes
+    {
+        title: "Lovely",
+        artist: "Billie Eilish, Khalid",
+        duration: 200,
+        playlist: "Jazz Vibes",
         audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3"
+    },
+    {
+        title: "Ocean Eyes",
+        artist: "Billie Eilish",
+        duration: 200,
+        playlist: "Jazz Vibes",
+        audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3"
+    },
+    {
+        title: "When The Party's Over",
+        artist: "Billie Eilish",
+        duration: 196,
+        playlist: "Jazz Vibes",
+        audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3"
+    },
+    
+    // Workout Beats
+    {
+        title: "Stronger",
+        artist: "Kanye West",
+        duration: 311,
+        playlist: "Workout Beats",
+        audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3"
+    },
+    {
+        title: "POWER",
+        artist: "Kanye West",
+        duration: 292,
+        playlist: "Workout Beats",
+        audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3"
+    },
+    {
+        title: "All of the Lights",
+        artist: "Kanye West",
+        duration: 300,
+        playlist: "Workout Beats",
+        audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-11.mp3"
     }
 ];
 
 // Global state
 let currentTrackIndex = 0;
+let currentPlaylist = [];
 let isPlaying = false;
 let isLiked = false;
 let isShuffle = false;
@@ -48,11 +218,24 @@ let repeatMode = 0; // 0: off, 1: repeat all, 2: repeat one
 let isMuted = false;
 let audioPlayer;
 
+// Playlist mappings
+const playlists = {
+    0: "Liked Songs",
+    1: "Discover Weekly",
+    2: "Release Radar",
+    3: "Daily Mix 1",
+    4: "On Repeat",
+    5: "Chill Lounge",
+    6: "Deep Focus",
+    7: "Jazz Vibes",
+    8: "Workout Beats"
+};
+
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     audioPlayer = document.getElementById('audioPlayer');
     setupEventListeners();
-    loadTrack(0);
+    loadPlaylist(0); // Load Liked Songs by default
 });
 
 // Setup all event listeners
@@ -76,12 +259,34 @@ function setupEventListeners() {
     document.addEventListener('keydown', handleKeyPress);
 }
 
-// Load track
-function loadTrack(index) {
-    if (index < 0 || index >= musicLibrary.length) return;
+// Load playlist
+function loadPlaylist(playlistIndex) {
+    const playlistName = playlists[playlistIndex];
+    currentPlaylist = musicLibrary.filter(track => track.playlist === playlistName);
+    
+    if (currentPlaylist.length > 0) {
+        loadTrackFromPlaylist(0);
+        updatePlaylistInfo(playlistName, currentPlaylist.length);
+    } else {
+        // Fallback to all tracks if playlist is empty
+        currentPlaylist = musicLibrary;
+        loadTrackFromPlaylist(0);
+        updatePlaylistInfo("All Songs", currentPlaylist.length);
+    }
+}
+
+// Update playlist info display
+function updatePlaylistInfo(playlistName, songCount) {
+    console.log(`🎵 Now Playing: ${playlistName} (${songCount} songs)`);
+    // You can add a UI element to display this if needed
+}
+
+// Load track from current playlist
+function loadTrackFromPlaylist(index) {
+    if (index < 0 || index >= currentPlaylist.length) return;
     
     currentTrackIndex = index;
-    const track = musicLibrary[index];
+    const track = currentPlaylist[index];
     
     // Update UI
     document.getElementById('trackName').textContent = track.title;
@@ -95,11 +300,14 @@ function loadTrack(index) {
     updateLikeButton(false);
 }
 
-// Play specific track
-function playTrack(index) {
-    if (currentTrackIndex !== index) {
-        loadTrack(index);
-    }
+// Load track (legacy - now uses playlist system)
+function loadTrack(index) {
+    loadPlaylist(index);
+}
+
+// Play specific track/playlist
+function playTrack(playlistIndex) {
+    loadPlaylist(playlistIndex);
     
     audioPlayer.play().then(() => {
         isPlaying = true;
@@ -149,15 +357,18 @@ function nextTrack() {
     let newIndex;
     
     if (isShuffle) {
-        newIndex = Math.floor(Math.random() * musicLibrary.length);
+        newIndex = Math.floor(Math.random() * currentPlaylist.length);
     } else {
         newIndex = currentTrackIndex + 1;
-        if (newIndex >= musicLibrary.length) {
+        if (newIndex >= currentPlaylist.length) {
             newIndex = 0;
         }
     }
     
-    playTrack(newIndex);
+    loadTrackFromPlaylist(newIndex);
+    if (isPlaying) {
+        audioPlayer.play();
+    }
 }
 
 // Handle track end
